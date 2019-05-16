@@ -19,9 +19,9 @@ var apiKey = "&api_key=7424bc8327fbe32ea30c48abefd6ebff&format=json";
       method: "GET",
       success: function(response) {
         var music = response.results.trackmatches.track[0].url
-        $("#some-text").text(music);
+        $("#some-text").html("<a href=" + music + ">Your song request here</a>");
           console.log(music);
-          
+        var artist= response.results.trackmatches.track[]
       },
     }); 
 });
